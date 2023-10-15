@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icons8-moeda-16.png" type="image/x-icon" />
+    <title>Conversor de moedas</title>
+</head>
+
+<body>
+    <div>
+        <img class="logo" src="./assets/logo (2).gif" alt="logo-conversor-de-moedas">
+    </div>
+    <main>
+        <label>
+            <p>Converter <b>de</b></p>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            <p>Converter <b>para</b></p>
+            <select class="currency-select">
+                <option value="bitcoin">₿ Bitcoin</option>
+                <option value="dolar">$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra Esterlina</option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-currency" placeholder="R$1.000,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+        <div class="currency-box">
+            <img src="./assets/real.png" alt="logo-moeda-a-converter" />
+            <p class="currency">Real</p>
+            <p class="currency-value-to-convert">R$ 0,00</p>
+        </div>
+          
+        <img class="arrow" src="./assets/Vector.png" alt="seta" />
+        
+        <div class="currency-box">
+            <img  id="currency-image" src="./assets/bitcoin.png" alt="logo-moeda-convertida" />
+            <p class="currency" id="currency-name">Bitcoin</p>
+            <p class="currency-value">BTC 0,00</p>
+        </div>
+    </section>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
+
+
+
+
+
